@@ -1,0 +1,134 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    text-decoration: none;
+    list-style: none;
+    transition: all ease 0.9s;
+}
+header{
+    padding: 15px;
+    background-color: #252525;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+header > *{
+    align-items: center;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+nav{
+    display: flex;
+    align-items: center;   
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+    
+}
+body{
+    background-image: url(./imagenes/body_bg.png);
+}
+/*este con flex */
+main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 200px;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+
+/* este es con grid */
+/* main{
+    grid-template-columns: repeat(3, 20pc);
+    row-gap: 1pc;
+    justify-content: center;
+    justify-items: center;
+} */
+.carta{
+    background-color: #232323;
+    width: 19pc;
+    height: 402.75px;
+    color: white;
+
+}
+.carta:hover{
+    background-color: #616161;
+}
+
+.carta:hover .pokemon {
+    opacity: 1;
+    font-size: 8pc;
+}
+
+.carta:hover .imagen {
+    width: 16pc;
+    top: -9px;
+    left: 8%;
+}
+
+.pokemon{
+    background-color: #ffffff;
+    color: #616161;
+    font-family: fantasy;
+    font-size: 6pc;
+    height: 224px;
+    width: 304px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    opacity: 0.1;
+}
+
+.imagen{
+    width: 13pc;
+    position: absolute;
+    top: 40px;
+    left: 16%;
+}
+
+/*cuando le pasas el raton hace esta accion*/
+
+
+
+.info{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+}
+.info h5{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+.info p{
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+}
+.bordeRa{
+    border-radius: 10px;
+}
+.slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-container{
+    display: flex;
+    width: 91%;
+    /* height: 70vh; */
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    padding: 0 31pc;
+}
